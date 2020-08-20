@@ -4,10 +4,194 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCC - Technical Documentation</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <div class="nav-bar">
+      <h1>
+        HTML Documentation
+      </h1>
+      <div class="container">
+        <div class="nav-block">Introduction</div>
+        <div class="nav-block">Brief History</div>
+        <div class="nav-block">Concept and syntax</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+        <div class="nav-block">1</div>
+      </div>
+    </div>
     <main class="main-doc">
-      <section class="main-section"></section>
+      <section class="main-section">
+        <h2 class="title">Introduction</h2>
+        <p>
+          HTML uses "markup" to annotate text, images, and other content for
+          display in a Web browser. HTML markup includes special "elements" such
+          as
+          <a
+            href="/en-US/docs/Web/HTML/Element/head"
+            title="The HTML <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."
+            ><code>&lt;head&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/title"
+            title="The HTML Title element (<title>) defines the document's title that is shown in a browser's title bar or a page's tab."
+            ><code>&lt;title&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/body"
+            title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."
+            ><code>&lt;body&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/header"
+            title="The HTML <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements."
+            ><code>&lt;header&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/footer"
+            title="The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents."
+            ><code>&lt;footer&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/article"
+            title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication)."
+            ><code>&lt;article&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/section"
+            title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."
+            ><code>&lt;section&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/p"
+            title="The HTML <p> element represents a paragraph."
+            ><code>&lt;p&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/div"
+            title="The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."
+            ><code>&lt;div&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/span"
+            title="The HTML <span> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang."
+            ><code>&lt;span&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/img"
+            title="The HTML <img> element embeds an image into the document."
+            ><code>&lt;img&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/aside"
+            title="The HTML <aside> element represents a portion of a document whose content is only indirectly related to the document's main content."
+            ><code>&lt;aside&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/audio"
+            title="The HTML <audio> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream."
+            ><code>&lt;audio&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/canvas"
+            title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations."
+            ><code>&lt;canvas&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/datalist"
+            title="The HTML <datalist> element contains a set of <option> elements that represent the permissible or recommended options available to choose from within other controls."
+            ><code>&lt;datalist&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/details"
+            title='The HTML Details Element (<details>) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state.'
+            ><code>&lt;details&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/embed"
+            title="The HTML <embed> element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in."
+            ><code>&lt;embed&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/nav"
+            title="The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes."
+            ><code>&lt;nav&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/output"
+            title="The HTML Output element (<output>) is a container element into which a site or app can inject the results of a calculation or the outcome of a user action."
+            ><code>&lt;output&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/progress"
+            title="The HTML <progress> element displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+            ><code>&lt;progress&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/video"
+            title="The HTML Video element (<video>) embeds a media player which supports video playback into the document. You can use <video> for audio content as well, but the <audio> element may provide a more appropriate user experience."
+            ><code>&lt;video&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/ul"
+            title="The HTML <ul> element represents an unordered list of items, typically rendered as a bulleted list."
+            ><code>&lt;ul&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/ol"
+            title="The HTML <ol> element represents an ordered list of items — typically rendered as a numbered list."
+            ><code>&lt;ol&gt;</code></a
+          >,
+          <a
+            href="/en-US/docs/Web/HTML/Element/li"
+            title="The HTML <li> element is used to represent an item in a list."
+            ><code>&lt;li&gt;</code></a
+          >
+          and many others.
+        <h2 class="title">Brief History</h2>
+        <p>
+          In 1990, as part of his vision of the Web, Tim Berners-Lee defined the
+          concept of hypertext, which Berners-Lee formalized the following year
+          through a markup mainly based on SGML. The IETF began formally
+          specifying HTML in 1993, and after several drafts released version 2.0
+          in 1995. In 1994 Berners-Lee founded the W3C to develop the Web. In
+          1996, the W3C took over the HTML work and published the HTML 3.2
+          recommendation a year later. HTML 4.0 was released in 1999 and became
+          an ISO standard in 2000.
+        </p>
+        <br />
+        <p>
+          At that time, the W3C nearly abandoned HTML in favor of XHTML,
+          prompting the founding of an independent group called WHATWG in 2004.
+          Thanks to WHATWG, work on HTML5 continued: the two organizations
+          released the first draft in 2008 and the final standard in 2014.
+        </p>
+        <h2 class="title">
+          Concept and syntax
+        </h2>
+        <p>
+          An HTML document is a plaintext document structured with elements.
+          Elements are surrounded by matching opening and closing tags. Each tag
+          begins and ends with angle brackets (<>). There are a few empty or
+          void tags that cannot enclose any text.
+        </p>
+        <br />
+        <p>
+          You can extend HTML tags with attributes, which provide additional
+          information affecting how the browser interprets the element:
+        </p>
+        <img
+          src="https://mdn.mozillademos.org/files/7659/anatomy-of-an-html-element.png"
+          alt="Atatomy of an HTML element"
+        />
+        
+        </p>
+      </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
