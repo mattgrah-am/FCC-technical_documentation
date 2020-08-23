@@ -7,153 +7,51 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="nav-bar">
-      <h1>
+    <nav id="navbar">
+      <header>
+      <h1 id="nav-header">
         HTML Documentation
       </h1>
       <div class="container">
-        <div class="nav-block">Introduction</div>
-        <div class="nav-block">Brief History</div>
-        <div class="nav-block">Concept and syntax</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
-        <div class="nav-block">1</div>
+        <div class="nav-block"><a class="nav-link" href="#Introduction">Introduction</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Brief_History">Brief History</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Concept_and_syntax">Concept and syntax</a></div>
+        <div class="nav-block"><a class="nav-link" href="#What_is_HTML">What is HTML</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Nesting_Elements">Nesting Elements</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Block_versus_inline_elements">Block versus inline elements</a></div>
+        <div class="nav-block"><a class="nav-link" href="#Whitespace_in_HTML">Whitespace in HTML</a></div>
+        <div class="nav-block"><a class="nav-link" href="#HTML_comments">HTML comments</a></div>
       </div>
-    </div>
-    <main class="main-doc">
-      <section class="main-section">
+    </header>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>
         <h2 class="title">Introduction</h2>
+       </header>
         <p>
           HTML uses "markup" to annotate text, images, and other content for
           display in a Web browser. HTML markup includes special "elements" such
           as
-          <a
-            href="/en-US/docs/Web/HTML/Element/head"
-            title="The HTML <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets."
-            ><code>&lt;head&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/title"
-            title="The HTML Title element (<title>) defines the document's title that is shown in a browser's title bar or a page's tab."
-            ><code>&lt;title&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/body"
-            title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."
-            ><code>&lt;body&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/header"
-            title="The HTML <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements."
-            ><code>&lt;header&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/footer"
-            title="The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents."
-            ><code>&lt;footer&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/article"
-            title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication)."
-            ><code>&lt;article&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/section"
-            title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."
-            ><code>&lt;section&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/p"
-            title="The HTML <p> element represents a paragraph."
-            ><code>&lt;p&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/div"
-            title="The HTML Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled using CSS."
-            ><code>&lt;div&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/span"
-            title="The HTML <span> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang."
-            ><code>&lt;span&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/img"
-            title="The HTML <img> element embeds an image into the document."
-            ><code>&lt;img&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/aside"
-            title="The HTML <aside> element represents a portion of a document whose content is only indirectly related to the document's main content."
-            ><code>&lt;aside&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/audio"
-            title="The HTML <audio> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream."
-            ><code>&lt;audio&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/canvas"
-            title="Use the HTML <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations."
-            ><code>&lt;canvas&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/datalist"
-            title="The HTML <datalist> element contains a set of <option> elements that represent the permissible or recommended options available to choose from within other controls."
-            ><code>&lt;datalist&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/details"
-            title='The HTML Details Element (<details>) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state.'
-            ><code>&lt;details&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/embed"
-            title="The HTML <embed> element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in."
-            ><code>&lt;embed&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/nav"
-            title="The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes."
-            ><code>&lt;nav&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/output"
-            title="The HTML Output element (<output>) is a container element into which a site or app can inject the results of a calculation or the outcome of a user action."
-            ><code>&lt;output&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/progress"
-            title="The HTML <progress> element displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
-            ><code>&lt;progress&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/video"
-            title="The HTML Video element (<video>) embeds a media player which supports video playback into the document. You can use <video> for audio content as well, but the <audio> element may provide a more appropriate user experience."
-            ><code>&lt;video&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/ul"
-            title="The HTML <ul> element represents an unordered list of items, typically rendered as a bulleted list."
-            ><code>&lt;ul&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/ol"
-            title="The HTML <ol> element represents an ordered list of items — typically rendered as a numbered list."
-            ><code>&lt;ol&gt;</code></a
-          >,
-          <a
-            href="/en-US/docs/Web/HTML/Element/li"
-            title="The HTML <li> element is used to represent an item in a list."
-            ><code>&lt;li&gt;</code></a
-          >
-          and many others.
+          <ul>
+            <li><code>&lt;head&gt;</code></li>
+            <li><code>&lt;title&gt;</code></li>
+            <li><code>&lt;body&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+          </ul>
+        </section>
+          <section id="Brief_History" class="main-section">
+            <header>
         <h2 class="title">Brief History</h2>
+      </header>
         <p>
           In 1990, as part of his vision of the Web, Tim Berners-Lee defined the
           concept of hypertext, which Berners-Lee formalized the following year
@@ -171,9 +69,11 @@
           Thanks to WHATWG, work on HTML5 continued: the two organizations
           released the first draft in 2008 and the final standard in 2014.
         </p>
-        <h2 class="title">
-          Concept and syntax
-        </h2>
+      </section>
+        <section id="Concept_and_syntax" class="main-section">
+          <header>
+        <h2 class="title">Concept and syntax</h2>
+        </header>
         <p>
           An HTML document is a plaintext document structured with elements.
           Elements are surrounded by matching opening and closing tags. Each tag
@@ -185,13 +85,79 @@
           You can extend HTML tags with attributes, which provide additional
           information affecting how the browser interprets the element:
         </p>
-        <img
+        <img id="concepts_syntax"
           src="https://mdn.mozillademos.org/files/7659/anatomy-of-an-html-element.png"
           alt="Atatomy of an HTML element"
         />
-        
+      </p>
+    </section>
+      <section id="What_is_HTML" class="main-section">
+        <header>
+        <h1 class="title">What is HTML</h1>
+      </header>
+        <p>
+          HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
         </p>
       </section>
+      <section id="Anatomy_of_an_HTML_element" class="main-section">
+        <header>
+        <h1 class="title">Anatomy of an HTML element</h1>
+      </header>
+        <p>
+          The anatomy of our element is:
+        <br>
+        The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+        The content: This is the content of the element. In this example, it is the paragraph text.
+        The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+        The element is the opening tag, followed by content, followed by the closing tag.
+        </p>
+      </section>
+      <section id="Nesting_Elements" class="main-section">
+        <header>
+        <h1 class="title">Nesting Elements</h1>
+      </header>
+        <p>
+          Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a <code>&lt;strong&gt;</code> element, which means that the word is to have strong(er) text formatting.
+        </p>
+      </section>
+      <section id="Block_versus_inline_elements" class="main-section">
+        <header>
+        <h1 class="title">Block versus inline elements</h1>
+      </header>
+        <p>
+          There are two important categories of elements to know in HTML: block-level elements and inline elements.
+          <br>
+          <ul>
+            <li>
+              Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.
+            </li>
+            <li>
+              Inline elements are contained within block-level elements, and surround only small parts of the document’s content. (not entire paragraphs or groupings of content) An inline element will not cause a new line to appear in the document. It is typically used with text. For example, as an <code>&lt;a&gt;</code> element (hyperlink) or emphasis elements such as <code>&lt;em&gt;</code> or <code>&lt;strong&gt;</code>.
+            </li>
+          </ul>
+        </p>
+      </section>
+      <section id="Whitespace_in_HTML" class="main-section">
+        <header>
+        <h1 class="title">Whitespace in HTML</h1>
+      </header>
+        <p>
+          No matter how much whitespace you use inside HTML element content (which can include one or more space character, but also line breaks), the HTML parser reduces each sequence of whitespace to a single space when rendering the code. So why use so much whitespace? The answer is readability.
+        <br>
+        It can be easier to understand what is going on in your code if you have it nicely formatted. In our HTML we've got each nested element indented by two spaces more than the one it is sitting inside. It is up to you to choose the style of formatting (how many spaces for each level of indentation, for example), but you should consider formatting it.
+        </p>
+      </section>
+        <section id="HTML_comments" class="main-section">
+          <header>
+        <h1 class="title">HTML comments</h1>
+      </header>
+        <p>
+          HTML has a mechanism to write comments in the code. Browsers ignore comments,  effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
+          To write an HTML&nbsp;comment, wrap it in the special markers <code>&lt;!--</code> and <code>--&gt;</code> 
+        </p>
+      </section>
+      <br><br>
+      <p>This information as collected from <a id="mdn" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></p>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
